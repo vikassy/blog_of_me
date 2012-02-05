@@ -7,6 +7,11 @@ gem 'rails', '3.1.3'
 
 gem 'therubyracer'
 
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
+
 group :development do
   gem "sqlite3-ruby", :require => "sqlite3"
   gem 'rspec-rails', '2.6.1'
